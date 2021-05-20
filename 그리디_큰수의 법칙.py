@@ -23,6 +23,20 @@ while True :
         break
     result += second#횟수가 남아 있으면 두번째로 큰 수를 더함
     m-=1#횟수(m)를 감소
+
+print(result)
+
+#단순반복문은 시간초과가 날 수 있기 때문에 특정수열이 일정한 패턴으로 유지되면 수학적으로 풀어본다 
+
+result = 0
+count = int(m/(k+1)) * k 
+#수열[6,6,6,5]가 반복적으로 나타나므로 이것을 수학적으로 나타내면 k+1이며 제일 큰 수가 나오는 횟수는 m/(k+1) x k이다
+count += m%(k+1)# m/(k+1)로 나눠지지 않는 것에 대비하여 나눈 나머지 횟수도 더해준다
+
+result+=count * first # 제일 큰 수를 횟수만큼 더한다
+result+=(m-count) * second # 두 번째로 큰 수는 수열만큼 즉 m/(k+1) = m-count만큼 나온다
+
+
 end_time=time.time()
 
 
