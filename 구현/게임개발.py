@@ -4,6 +4,7 @@ x, y, direction = map(int, input().split())
 #방문한 위치를 표시하기 위해 0으로 초기화
 d = [[0] * m for _ in range(n)]#여기서 for _ in range(n)안에 '_'의 의미는 인덱스를 무시한다는 의미이다(단순반복만 할 때 사용)
 #[0] * m은 리스트안에 0을 m번만큼 넣는다는 의미이다
+# 여기서 for _ in range(n)의 역할은 [0]을 n만큼 추가한다 
 d[x][y] = 1#시작시 방문체크
 
 arrays = []
