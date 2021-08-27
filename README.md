@@ -1,3 +1,6 @@
+name:"codingteststudy"
+url:"www.codingteststudy.github.io"
+
 # 리드미 연습
 
 ## 글자크기
